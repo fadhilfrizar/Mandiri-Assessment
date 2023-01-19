@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoriesCollectionCell" id="gTV-IL-0wX" customClass="CategoriesCollectionCell" customModule="Mandiri_Test_Assesment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV4-vr-ktH">
+                        <rect key="frame" x="8" y="8" width="312" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eY4-kc-jfd">
+                        <rect key="frame" x="0.0" y="56" width="328" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SPC-5L-MDv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eY4-kc-jfd" secondAttribute="bottom" id="5uv-ql-jdK"/>
+                <constraint firstItem="eY4-kc-jfd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E6q-KS-tVB"/>
+                <constraint firstItem="EV4-vr-ktH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="La7-3c-dEg"/>
+                <constraint firstAttribute="trailing" secondItem="EV4-vr-ktH" secondAttribute="trailing" constant="8" id="TN1-2u-U1U"/>
+                <constraint firstAttribute="bottom" secondItem="EV4-vr-ktH" secondAttribute="bottom" constant="8" id="b3e-Im-OsU"/>
+                <constraint firstItem="EV4-vr-ktH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="e06-6H-VJX"/>
+                <constraint firstAttribute="trailing" secondItem="eY4-kc-jfd" secondAttribute="trailing" id="q2s-Ec-65M"/>
+            </constraints>
+            <size key="customSize" width="328" height="57"/>
+            <connections>
+                <outlet property="categoriesLabel" destination="EV4-vr-ktH" id="BSs-lg-76Q"/>
+            </connections>
+            <point key="canvasLocation" x="351.14503816793894" y="22.183098591549296"/>
+        </collectionViewCell>
+    </objects>
+</document>
