@@ -59,10 +59,12 @@ extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newsCollectionCell", for: indexPath) as! NewsCollectionCell
         
-        cell.newsImageView.loadImageUsingCacheWithUrlString(self.news[indexPath.row].urlToImage ?? "")
-        cell.newsTitleLabel.text = self.news[indexPath.row].title ?? "-"
-        cell.newsAuthorLabel.text = self.news[indexPath.row].author ?? "-"
-        cell.newsPublishedDateLabel.text = self.news[indexPath.row].publishedAt?.convertStringToDateString() ?? "-"
+        let dataNews = self.news[indexPath.row]
+        
+        cell.newsImageView.loadImageUsingCacheWithUrlString(dataNews.urlToImage ?? "")
+        cell.newsTitleLabel.text = dataNews.title ?? "-"
+        cell.newsAuthorLabel.text = dataNews.author ?? "-"
+        cell.newsPublishedDateLabel.text = dataNews.publishedAt?.convertStringToDateString() ?? "-"
         
         return cell
     }
